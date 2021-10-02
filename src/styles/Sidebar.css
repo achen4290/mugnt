@@ -7,6 +7,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     width: 23rem;
+    position: absolute;
 }
 
 .sidebar-wrapper-wrapper {

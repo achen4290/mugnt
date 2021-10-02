@@ -42,7 +42,7 @@ function Sidebar(props) {
         if(!sidebaropen) {
             sidebarRef.current.style.transform = 'translateX(-23rem)';
         } else {
-            sidebarRef.current.style.transform = 'translateX(0px)';
+            sidebarRef.current.style.transform = 'translateX(0rem)';
         }
     }, [sidebaropen])
 
