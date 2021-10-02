@@ -8,6 +8,7 @@
     overflow-x: hidden;
     width: 23rem;
     position: absolute;
+    z-index: 20;
 }
 
 .sidebar-wrapper-wrapper {

@@ -16,7 +16,7 @@ function Map(props) {
 
             <Sidebar/>
             <SidebarBtn/>
-            {/* <Path/> */}
+            <Path/>
 
         </div>
     );
