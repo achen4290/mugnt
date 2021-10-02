@@ -1,9 +1,12 @@
 .sidebar-wrapper {
     height: 100%;
     width: 0%;
-    display: none;
-    transition: width 0.7s;
+    display: inline-block;
+    transition: transform 0.3s;
     background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 23rem;
 }
 
 .sidebar-wrapper-wrapper {
@@ -17,6 +20,8 @@
     font-size: 2rem;
     font-weight: 800;
     margin-top: 1.5rem;
+    background-color: #FCE21C;
+    padding: 0.5rem;
 }
 
 .sidebar-subtitle {
@@ -34,5 +39,80 @@
 }
 
 .sidebar-query {
+    font-size: 0.75rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 65%, #FCE21C 65%);
+    display: inline;
+}
+
+.sidebar-query-1 {
+    width: 5.5rem;
+}
+
+.sidebar-query-2 {
+    width: 18.5rem;
+}
+
+.sidebar-query-percent {
+    font-weight: 800;
+    display: inline;
+    margin-left: 0.25rem;
+    font-size: 1rem;
+}
+
+.sidebar-query-extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-moreoptions {
+    margin-top: 0.5rem;
+    color: grey;
+    font-size: 0.65rem;
+    cursor: pointer;
+}
+
+.sidebar-moreoptions:hover {
+    text-decoration: underline;
+}
+
+.sidebar-sectiontitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #FCE21C;
+    padding: 0.15rem;
+    display: inline;
+    margin-bottom: 0.5rem;
+    color: rgb(54, 54, 54)
+}
+
+.sidebar-city-wrapper {
+    display: flex;
+    justify-content: left;
+    margin: 0.25rem 0 1rem 0;
+}
+
+.sidebar-city {
     font-size: 0.8rem;
+    padding: 0.25rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    cursor:pointer;
+    margin-right: 0.5rem;
+}
+
+.sidebar-city-selected {
+    border: 1px solid #FCE21C;
+    
+}
+
+.sidebar-options-wrapper {
+    width: 19rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.sidebar-options-offset {
+    margin-left: 2rem;
 }
