@@ -1,6 +1,6 @@
 # MUGN'T
 
-This project was developed at HackCMU 2021 and won [2nd place overall](https://devpost.com/software/mugn-t).
+This project was developed for [HackCMU 2021](https://hackcmu21.devpost.com/) and won [2nd place overall](https://devpost.com/software/mugn-t).
 
 ## About MUGN'T
 
