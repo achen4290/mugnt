@@ -1,9 +1,27 @@
-# Getting Started with Create React App
+# MUGN'T
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed at HackCMU 2021 and won [2nd place overall](https://devpost.com/software/mugn-t).
+
+## About MUGN'T
+
+MUGN’T takes in 3 inputs:
+- the city (currently only supporting Baltimore, Detroit, and Pittsburgh)
+- an input start and end point 
+- a “safety priority coefficient” which is a user-provided threshold on their acceptable rate of being the victim of a violent crime
+
+The currently supported safety priority coefficients are:
+- Mugged
+- Murdered
+- Assaulted
+- Robbed
+- Shot
+
+It uses the input points and runs a Dijkstra’s algorithm, augmented with probabilistic algorithms, to find the optimal path with respect to the safety priority coefficients.
+
+The safety of both the new path and the shortest path are then evaluated using Markov Chains that estimate the probability of a violent event occurring along the route. This is done by analyzing the historic number of violent crimes along each route and the population density of the various cities. We then return to the user an intuitive safety analysis UI comparing the safety of the two routes with respect to our 5 safety priority coefficients. 
 
 ## Available Scripts
-
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and supports all of the relevant scripts.
 In the project directory, you can run:
 
 ### `yarn start`
@@ -38,33 +56,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
